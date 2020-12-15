@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #005676;
+  padding: 10px;
+  color: #30c7ff;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.navbar a:hover {
+  color: lightblue;
+}
+.navbar-component {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.search-div {
+  display: flex;
+  align-items: center;
+}
+.search-navbar {
+  width: 400px;
+  padding: 8px;
+  border-radius: 50px;
+}
+.search-div a {
+  padding: 10px;
+}
+.cart-div {
+  display: flex;
+}
+.cart-div button {
+  padding: 5px;
+  margin-right: 5px;
+}
+.cart-div span {
+  margin-left: 5px;
+}
+.profile-div {
+  display: flex;
+}
+.profile-div span {
+  margin-left: 5px;
+}

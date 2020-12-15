@@ -1,0 +1,21 @@
+.footer-detail {
+  position: relative;
+  top: 100px;
+  background-color: #005676;
+  padding: 50px;
+  text-align: center;
+}
+.footer-content {
+  color: #30c7ff;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.contactUs {
+  background-color: #022836;
+  width: 40%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}

@@ -1,0 +1,97 @@
+.profileDiv {
+  color: #30c7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+}
+.profileDetail {
+  background-color: #005676;
+  width: 40%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 50px;
+}
+.userDetail {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 4rem;
+}
+.editProfileButton {
+  margin-top: 8vh;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  width: 150px;
+  padding: 6px;
+  background-color: #30c7ff;
+  color: #005676;
+  font-weight: bold;
+  border-radius: 35px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+.editProfileButton:hover {
+  background-color: black;
+  color: #30c7ff;
+}
+.paymentStatus {
+  color: #30c7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+}
+.paymentDetail {
+  background-color: #005676;
+  width: 60%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 50px;
+}
+.paymentTableDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.paymentTable {
+  margin-top: 10vh;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #30c7ff;
+}
+.paymentTable td {
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.tableControl1 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #30c7ff;
+  border-top: none;
+  border-left: none;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: black;
+  color: lightblue;
+}
+.tableControl2 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #30c7ff;
+  border-top: none;
+  border-right: none;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: black;
+  color: lightblue;
+}

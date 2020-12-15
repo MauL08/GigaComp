@@ -1,0 +1,30 @@
+.categories-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  margin-top: 100px;
+  color: #30c7ff;
+}
+.categories-list {
+  background-color: #005676;
+  width: 50%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 50px;
+}
+.table-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories-table td {
+  font-size: 18px;
+  padding: 28px;
+}
+.categories-table a {
+  cursor: pointer;
+}
+.categories-table a:hover {
+  color: lightblue;
+}

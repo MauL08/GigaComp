@@ -1,0 +1,54 @@
+.editProfileDiv {
+  color: #30c7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 100px;
+}
+.editProfileDetail {
+  background-color: #005676;
+  width: 40%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 50px;
+}
+.backProfileButton {
+  margin-top: 8vh;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  width: 150px;
+  padding: 6px;
+  background-color: #30c7ff;
+  color: #005676;
+  font-weight: bold;
+  border-radius: 35px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+.backProfileButton:hover {
+  background-color: black;
+  color: #30c7ff;
+}
+.userDetailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 40px;
+  border-radius: 30px;
+  margin-top: 4rem;
+}
+.userDetailForm input {
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+.inputAddressText {
+  height: 20vh;
+  width: 60%;
+  padding: 7px;
+  text-align: center;
+}

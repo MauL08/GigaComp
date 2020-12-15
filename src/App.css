@@ -1,0 +1,14 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:visited {
+  color: #30c7ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #005676;
+}
