@@ -30,34 +30,9 @@ export default function Profile() {
       </div>
       <div className='paymentStatus'>
         <div className='paymentDetail'>
-          <h1>Payment Status</h1>
-          <div className='paymentTableDiv'>
-            <table className='paymentTable'>
-              <tr>
-                <td className='tableControl1'>Waiting</td>
-                <td className='tableControl2'>Confirmed</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-            </table>
+          <h1>Transaction History</h1>
+          <div className='historyList'>
+            
           </div>
         </div>
       </div>

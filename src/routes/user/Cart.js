@@ -18,6 +18,11 @@ export default function Cart() {
           <Link to='/'>
             <button>Search & Add Product</button>
           </Link>
+          <br></br>
+          <br></br>
+          <Link to='/payment'>
+            <button>Go To Payment</button>
+          </Link>
         </div>
       </div>
       <Footer />

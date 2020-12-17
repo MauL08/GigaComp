@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import product3 from '../../img/product/vga1.jpg';
@@ -16,7 +16,7 @@ export default function Product() {
 
   return (
     <div className='productPage'>
-      <NavBar cart={cart} />
+      <NavBar cart={cart} /> 
       <div className='productDetail'>
         <div className='productImage'>
           <h1>NVIDIA GeForce RTX 3080</h1>

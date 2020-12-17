@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Axios from 'axios';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AdminForm from './routes/admin/AdminForm';
@@ -55,7 +56,7 @@ function App() {
           <Route path='/ram' exact component={RAM} />
           <Route path='/power-supply' exact component={PSU} />
           <Route path='/processor' exact component={Processor} />
-          <Route path='/motherboard' exact component={Motherboard} />
+          <Route path='/motherboard/' exact component={Motherboard} />
         </Switch>
       </Router>
     </div>

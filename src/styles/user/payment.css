@@ -1,0 +1,49 @@
+.paymentPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105vh;
+  margin-top: 100px;
+  color: #30c7ff;
+}
+.paymentDiv {
+  background-color: #005676;
+  width: 50%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 50px;
+}
+.totalAmount {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+}
+.accountNumber {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+}
+.uploadTransaction {
+  background-color: black;
+  padding: 20px;
+  border-radius: 50px;
+}
+.continueButton {
+  margin-top: 8vh;
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  width: 150px;
+  padding: 6px;
+  background-color: #30c7ff;
+  color: #005676;
+  font-weight: bold;
+  border-radius: 35px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+.continueButton:hover {
+  background-color: black;
+  color: #30c7ff;
+}
