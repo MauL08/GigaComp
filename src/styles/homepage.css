@@ -51,11 +51,14 @@
   font-size: 18px;
 }
 .product-list img {
-  border-color: black;
-  border-width: 5px;
+  border-color: grey;
+  border-width: 3px;
   border-style: solid;
   text-align: center;
   padding: 20px;
+}
+.product-list img:hover {
+  box-shadow: 5px 5px 5px grey;
 }
 .popular-product {
   background-color: #005676;
@@ -73,7 +76,7 @@
 }
 .popular-product-list img {
   border-color: black;
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
   text-align: center;
 }
@@ -100,10 +103,13 @@
 }
 .product-table img {
   padding: 20px;
-  border-color: black;
-  border-width: 5px;
+  border-color: grey;
+  border-width: 3px;
   border-style: solid;
   text-align: center;
+}
+.product-table img:hover {
+  box-shadow: 5px 5px 5px grey;
 }
 .product-table td {
   padding: 15px;

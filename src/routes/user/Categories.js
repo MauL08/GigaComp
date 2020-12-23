@@ -18,17 +18,17 @@ export default function Categories() {
               <tr>
                 <td>
                   <Link to='/vga'>
-                    <a>Virtual Graphic Array</a>
+                    <a>VGA</a>
                   </Link>
                 </td>
                 <td>
                   <Link to='/hard-disk'>
-                    <a>Hard Disk</a>
+                    <a>HDD</a>
                   </Link>
                 </td>
                 <td>
                   <Link to='/ssd'>
-                    <a>Solid State Drive</a>
+                    <a>SSD</a>
                   </Link>
                 </td>
               </tr>
@@ -39,13 +39,13 @@ export default function Categories() {
                   </Link>
                 </td>
                 <td>
-                  <Link to='/power-supply'>
-                    <a>Power Supply</a>
+                  <Link to='/ram'>
+                    <a>RAM</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to='/ram'>
-                    <a>Random Access Memory</a>
+                  <Link to='/power-supply'>
+                    <a>Power Supply</a>
                   </Link>
                 </td>
               </tr>

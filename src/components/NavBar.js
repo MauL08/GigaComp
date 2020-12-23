@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import * as BiIcons from 'react-icons/bi';
@@ -6,9 +6,12 @@ import * as BsIcons from 'react-icons/bs';
 import * as AiIcons from 'react-icons/ai';
 import * as CgIcons from 'react-icons/cg';
 import Logo from '../img/logo.png';
+import { CartContext } from '../routes/user/Product';
 import './navbar.css';
 
 export default function NavBar() {
+  const showCartContext = useContext(CartContext);
+
   return (
     <div className='navbar'>
       <div className='navbar-component tooltip'>
