@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: -40px;
 }
 .editProfileDetail {
   background-color: #005676;
   width: 40%;
   text-align: center;
-  padding: 100px;
+  padding: 70px;
   border-radius: 50px;
 }
 .backProfileButton {

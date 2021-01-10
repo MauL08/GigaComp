@@ -19,8 +19,6 @@ export default function RegisterForm() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
       <div className='register-auth'>
         <h1>~~ GigaComp ~~</h1>
         <br></br>
@@ -85,8 +83,6 @@ export default function RegisterForm() {
           </Link>
         </div>
       </div>
-      <br></br>
-      <br></br>
       <Footer />
     </div>
   );

@@ -2,9 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65vh;
-  margin-top: 100px;
-  color: #30c7ff;
 }
 .categories-list {
   background-color: #005676;
@@ -12,11 +9,14 @@
   text-align: center;
   padding: 100px;
   border-radius: 50px;
+  color: #30c7ff;
+  margin-top: 50px;
+  margin-bottom: -50px;
 }
 .table-div {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .categories-table td {
   font-size: 18px;

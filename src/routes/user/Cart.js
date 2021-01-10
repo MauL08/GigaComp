@@ -11,17 +11,45 @@ export default function Cart() {
       <div className='cart-page'>
         <div className='cart-content'>
           <h1>CART LIST</h1>
+          {/*Kondisi Cart Ada*/}
+          <div className='product-cart'>
+            <table  className='cartTable'>
+              <tr className='trTitle'>
+                <td>Image</td>
+                <td>Name</td>
+                <td>Price</td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteCartButton'>Delete</button></td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteCartButton'>Delete</button></td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteCartButton'>Delete</button></td>
+              </tr>
+            </table>
+          </div>
           <br></br>
+          <br></br>
+          {/* Kondisi Cart Tidak Ada*/}
           <p>There is no Product in the Cart!</p>
-          <br></br>
-          <br></br>
           <Link to='/'>
-            <button>Search & Add Product</button>
+            <button className='searchProduct'>Search & Add Product</button>
           </Link>
           <br></br>
           <br></br>
           <Link to='/payment'>
-            <button>Go To Payment</button>
+            <button className='paymentProduct'>Go To Payment</button>
           </Link>
         </div>
       </div>

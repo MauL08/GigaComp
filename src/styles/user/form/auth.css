@@ -1,16 +1,16 @@
 .login-auth,
 .register-auth,
 .admin-auth {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #30c7ff;
+  margin-top: -3rem;
 }
 .formLogin,
 .formRegister,
 .formAdmin {
+  color: #30c7ff;
   background-color: #005676;
   text-align: center;
   padding: 100px;
@@ -18,6 +18,8 @@
   border-color: black;
   border-width: 8px;
   border-style: solid;
+  margin-top: -20px;
+  margin-bottom: -50px;
 }
 .crusialButton {
   cursor: pointer;

@@ -9,8 +9,8 @@ export default function Footer() {
         <div className='contactUs'>
           <div className='contactContent'>
             <h2>Contact Us</h2>
-            <p>Gmail : gigacomp@gmail.com</p>
-            <p>Phone : +62 8921083213</p>
+            <p>Gmail : farhandewanta11@gmail.com</p>
+            <p>Phone : +62 1839012894</p>
           </div>
         </div>
         <span>This is for Assignment Only!</span>

@@ -11,12 +11,40 @@ export default function Wishlist() {
       <div className='wishlist-page'>
         <div className='wishlist-content'>
           <h1>WISHLIST</h1>
+          {/*Kondisi Wishlist Ada*/}
+          <div className='product-wishlist'>
+            <table  className='wishlistTable'>
+              <tr className='trTitle'>
+                <td>Image</td>
+                <td>Name</td>
+                <td>Price</td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteWishlistButton'>Delete</button></td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteWishlistButton'>Delete</button></td>
+              </tr>
+              <tr>
+                <td>product_image</td>
+                <td>product_name</td>
+                <td>product_price</td>
+                <td><button className='deleteWishlistButton'>Delete</button></td>
+              </tr>
+            </table>
+          </div>
           <br></br>
+          <br></br>
+          {/*Kondisi Wishlist Kosong*/}
           <p>There is no Wishlist here!</p>
-          <br></br>
-          <br></br>
           <Link to='/'>
-            <button>Search & Add Product</button>
+            <button className='searchWishlist'>Search & Add Product</button>
           </Link>
         </div>
       </div>

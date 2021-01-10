@@ -1,50 +1,49 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Footer from '../../components/Footer';
-import NavBar from '../../components/NavBar';
-import '../../styles/user/categories.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+import NavBar from "../../components/NavBar";
+import "../../styles/user/categories.css";
 
 export default function Categories() {
   return (
     <div>
       <NavBar />
-      <div className='categories-div'>
-        <div className='categories-list'>
+      <div className="categories-div">
+        <div className="categories-list">
           <h1>CATEGORY LIST</h1>
           <br></br>
-          <br></br>
-          <div className='table-div'>
-            <table className='categories-table'>
+          <div className="table-div">
+            <table className="categories-table">
               <tr>
                 <td>
-                  <Link to='/vga'>
+                  <Link to="/productList">
                     <a>VGA</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to='/hard-disk'>
+                  <Link to="/productList">
                     <a>HDD</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to='/ssd'>
+                  <Link to="/productList">
                     <a>SSD</a>
                   </Link>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Link to='/processor'>
+                  <Link to="/productList">
                     <a>Processor</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to='/ram'>
+                  <Link to="/productList">
                     <a>RAM</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to='/power-supply'>
+                  <Link to="/productList">
                     <a>Power Supply</a>
                   </Link>
                 </td>
@@ -52,7 +51,7 @@ export default function Categories() {
               <tr>
                 <td></td>
                 <td>
-                  <Link to='/motherboard'>
+                  <Link to="/productList">
                     <a>Motherboard</a>
                   </Link>
                 </td>

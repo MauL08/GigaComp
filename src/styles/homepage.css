@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 40vh;
 }
 .promo-div {
   background-color: #005676;
@@ -14,6 +13,7 @@
   font-weight: bolder;
   font-size: 32px;
   border-radius: 30px;
+  margin-top: 5rem;
 }
 .title-div {
   text-align: center;
@@ -99,7 +99,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 115vh;
 }
 .product-table img {
   padding: 20px;

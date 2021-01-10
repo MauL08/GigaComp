@@ -1,0 +1,116 @@
+.adminPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+.adminPage h1 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+.adminPage h3 {
+    font-size: 28px;
+    margin-bottom: 3rem;
+}
+.tableAdmin {
+    color: #30c7ff;
+    background-color: #022836;
+    border-radius: 20px;
+    border-color: #30c7ff;
+    border-style: solid;
+    border-width:thick;
+    width: 80%;
+}
+.tableAdmin td {
+    padding: 20px;
+}
+.adminConfirmButton {
+    cursor: pointer;
+    background-color: rgb(0, 185, 0);
+    border-color:  rgb(0, 185, 0);
+    font-weight: bolder;
+    border-radius: 12px;
+    padding: 5px;
+    width: 30%;
+}
+.adminConfirmButton:hover {
+    background-color: rgb(0, 210, 0);
+    border-color: rgb(0, 210, 0);
+}
+.adminCancelButton {
+    cursor: pointer;
+    background-color: rgb(226, 0, 0);
+    border-color:  rgb(226, 0, 0);
+    font-weight: bolder;
+    border-radius: 12px;
+    padding: 5px;
+    width: 30%;
+    margin-left: 20px;
+}
+.adminCancelButton:hover {
+    background-color: rgb(255, 0, 0);
+    border-color:  rgb(255, 0, 0);
+}
+.adminProduct {
+    color: #30c7ff;
+    background-color: #022836;
+    border-radius: 20px;
+    border-color: #30c7ff;
+    border-style: solid;
+    border-width:thick;
+    margin-top: 3rem;
+    width: 50%;   
+}
+.adminAddControl {
+    padding: 30px;
+}
+.inputAddProduct {
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 35%;
+}
+.adminAddControl textarea {
+    resize: vertical;
+    height: 12vh;
+}
+.adminAddControl h2 {
+    color: #30c7ff;
+}
+.addProductButton {
+    cursor: pointer;
+    background-color: #30c7ff;
+    border-color: #30c7ff;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 8px;
+    width: 18%;
+}
+.addProductButton:hover {
+    background-color: #00b5f7;
+    border-color:  #00b5f7;
+    color: black;
+}
+.adminLogOut {
+    color: black;
+    background-color: red;
+    border-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 12px;
+    padding: 5px;
+    width: 10%;
+    margin-left: 20px;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+.adminLogOut:hover {
+    background-color:black;
+    color: red;
+}

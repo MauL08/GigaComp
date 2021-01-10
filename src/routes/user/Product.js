@@ -35,27 +35,12 @@ export default function Product() {
           </div>
           <div className='productInfo'>
             <div className='productSpec'>
-              <h1>Specification</h1>
-              <h3>CUDA Cores</h3>
-              <p>8704</p>
-              <h3>Memory Size</h3>
-              <p>10 GB</p>
-              <h3>Boost Click</h3>
-              <p>1.71 GHz</p>
-              <h3>Memory Type</h3>
-              <p>GDDR 6x</p>
+              <h1>Description</h1>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lacus porttitor, pretium nibh eu, mattis augue. Proin lorem lectus, sodales in tincidunt at, varius quis tortor. Vivamus consectetur eu ipsum nec malesuada. Donec rhoncus arcu in lobortis lacinia. In at felis ut odio scelerisque sollicitudin. Curabitur sed diam justo. Ut efficitur nibh nibh, ac lobortis ipsum venenatis sollicitudin. Aliquam ullamcorper, est pharetra bibendum rutrum, tortor mi lacinia orci, in dignissim sem ligula at ex. Ut placerat metus et enim laoreet, at accumsan erat fermentum. Vivamus bibendum malesuada dolor, non ornare mauris semper vitae. Nullam blandit libero et faucibus vehicula. In placerat nisi vel ipsum viverra condimentum. Aliquam erat volutpat.
+                Fusce aliquam pretium consequat. Suspendisse tristique tempor accumsan. Nam neque lectus, facilisis vel dui sit amet, imperdiet pharetra lacus. Nullam faucibus sed ex sed tristique. Aliquam vel nisi enim. Etiam euismod vestibulum diam non posuere. Sed fringilla tempus finibus. Nulla tincidunt neque tempor eros tempus sodales. Cras vel scelerisque arcu.
+              </h3>
             </div>
-          </div>
-        </div>
-        <div className='productDesc'>
-          <div className='productDescTitle'>=== Description ===</div>
-        </div>
-        <div className='productDescDiv'>
-          <div className='productDescDetail'>
-            <p>The Description is Here!</p>
-            <p>The Description is Here!</p>
-            <p>The Description is Here!</p>
-            <p>The Description is Here!</p>
           </div>
         </div>
       </CartContext.Provider>

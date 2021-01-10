@@ -15,17 +15,13 @@ export default function EditProfile() {
     <div>
       <NavBar />
       <div className='editProfileDiv'>
-        <IconContext.Provider value={{ size: '200px' }}>
           <div className='editProfileDetail'>
             <Link to='/profile'>
               <button className='backProfileButton'>Back</button>
             </Link>
             <br></br>
             <br></br>
-            <br></br>
             <h1>Edit Your Profile</h1>
-            <br></br>
-            <CgIcons.CgProfile />
             <div className='userDetailForm'>
               <h3>Username</h3>
               <input type='text' placeholder='Type Here!'></input>
@@ -46,7 +42,6 @@ export default function EditProfile() {
               </button>
             </Link>
           </div>
-        </IconContext.Provider>
       </div>
       <Footer />
     </div>

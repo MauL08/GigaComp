@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 105vh;
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-bottom: -30px;
   color: #30c7ff;
 }
 .paymentDiv {
@@ -13,20 +13,24 @@
   padding: 100px;
   border-radius: 50px;
 }
+.paymentDiv h3 {
+  color: whitesmoke;
+}
 .totalAmount {
   background-color: black;
-  padding: 20px;
-  border-radius: 50px;
+  padding: 5px;
+  border-radius: 30px;
 }
 .accountNumber {
   background-color: black;
-  padding: 20px;
-  border-radius: 50px;
+  padding: 5px;
+  border-radius: 30px;
 }
 .uploadTransaction {
   background-color: black;
   padding: 20px;
-  border-radius: 50px;
+  padding-bottom: 40px;
+  border-radius: 30px;
 }
 .continueButton {
   margin-top: 8vh;
