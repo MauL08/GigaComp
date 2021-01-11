@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Axios from 'axios';
 import NavBar from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
 import '../../../styles/user/form/auth.css';
+import { fetchRegister } from "../../../redux";
+import { connect } from "react-redux";
 
-export default function RegisterForm() {
-  const [regName, setRegName] = useState('');
-  const [regEmail, setRegEmail] = useState('');
-  const [regPass, setRegPass] = useState('');
-  const [regRePass, setRegRePass] = useState('');
+function RegisterForm({ data, fetchRegister}) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPass] = useState('');
+  const [phone, setPhone] = useState('');
 
-  const regAuth = () => {};
+  const regAuth = () => {fetchRegister(phone, password, email, name)};
 
   return (
     <div className='registerPage'>
@@ -33,7 +34,7 @@ export default function RegisterForm() {
             className='crusialInput'
             placeholder='Username'
             onChange={event => {
-              setRegName(event.target.value);
+              setName(event.target.value);
             }}
           ></input>
           <br></br>
@@ -43,7 +44,7 @@ export default function RegisterForm() {
             className='crusialInput'
             placeholder='Email'
             onChange={event => {
-              setRegEmail(event.target.value);
+              setEmail(event.target.value);
             }}
           ></input>
           <br></br>
@@ -53,17 +54,17 @@ export default function RegisterForm() {
             className='crusialInput'
             placeholder='Password'
             onChange={event => {
-              setRegPass(event.target.value);
+              setPass(event.target.value);
             }}
           ></input>
           <br></br>
           <br></br>
           <input
-            type='password'
+            type='text'
             className='crusialInput'
-            placeholder='Confirm Password'
+            placeholder='input phone'
             onChange={event => {
-              setRegRePass(event.target.value);
+              setPhone(event.target.value);
             }}
           ></input>
           <br></br>
@@ -87,3 +88,18 @@ export default function RegisterForm() {
     </div>
   );
 }
+
+
+const mapStateToProps = (state) => {
+  return {
+    data: state.register,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchRegister: (phone, password, email, name) => dispatch(fetchRegister(phone, password, email, name)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(RegisterForm);

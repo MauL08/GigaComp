@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchLogin = (email, password) => {
   return (dispatch) => {
     axios
-      .post("http://192.168.100.89:6969/users/login", {
+      .post("http://127.0.0.1:6969/users/login", {
         email,
         password,
       })
@@ -12,6 +12,7 @@ export const fetchLogin = (email, password) => {
         // response.data is the users
         const logins = response.data;
         console.log(document.cookie);
+        console.log(response.status)
         dispatch(loginSuccess(logins));
       })
       .catch((error) => {

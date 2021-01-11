@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchRegister = (phone, password, email, name) => {
   return (dispatch) => {
     axios
-      .post("http://192.168.100.89:6969/users/register",{
+      .post("http://127.0.0.1:6969/users/register",{
       phone,
       password,
       email,

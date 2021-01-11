@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchProduct = () => {
   return (dispatch) => {
     axios
-      .get("http://192.168.100.89:6969/listings")
+      .get("http://127.0.0.1:6969/listings")
       .then((response) => {
         // response.data is the users
         const products = response.data;

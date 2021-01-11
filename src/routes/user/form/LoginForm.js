@@ -4,14 +4,14 @@ import Axios from 'axios';
 import NavBar from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
 import '../../../styles/user/form/auth.css';
+import { fetchLogin } from "../../../redux";
+import { connect } from "react-redux";
 
-export default function LoginForm() {
-  const [loginEmail, setLoginEmail] = useState('');
-  const [loginPass, setLoginPass] = useState('');
+function LoginForm({ data, fetchLogin}) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const [token, setToken] = useState('');
-
-  const loginAuth = () => {};
+  const loginAuth = () => {fetchLogin(email, password)};
 
   return (
     <div className='loginPage'>
@@ -33,7 +33,7 @@ export default function LoginForm() {
             placeholder='Email'
             className='crusialInput'
             onChange={event => {
-              setLoginEmail(event.target.value);
+              setEmail(event.target.value);
             }}
           ></input>
           <br></br>
@@ -43,7 +43,7 @@ export default function LoginForm() {
             placeholder='Password'
             className='crusialInput'
             onChange={event => {
-              setLoginPass(event.target.value);
+              setPassword(event.target.value);
             }}
           ></input>
           <br></br>
@@ -67,3 +67,18 @@ export default function LoginForm() {
     </div>
   );
 }
+
+
+const mapStateToProps = (state) => {
+  return {
+    data: state.login,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchLogin: (email, password) => dispatch(fetchLogin(email, password)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

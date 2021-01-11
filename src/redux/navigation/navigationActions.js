@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchNavigation = () => {
   return (dispatch) => {
     axios
-      .get("http://192.168.100.89:6969/users/navigation"
+      .get("http://127.0.0.1:6969/users/navigation"
        )
       .then((response) => {
         // response.data is the users

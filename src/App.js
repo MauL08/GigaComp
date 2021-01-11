@@ -17,7 +17,7 @@ import EditProfile from './routes/user/EditProfile';
 import Result from './routes/user/Result';
 import Redirect from './components/Redirect';
 import ProductList from './routes/user/categories/ProductList';
-import store from "./redux/store";
+import store from './redux/store'
 import { Provider } from "react-redux";
 
 function App() {
