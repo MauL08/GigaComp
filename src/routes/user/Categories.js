@@ -16,7 +16,7 @@ export default function Categories() {
             <table className="categories-table">
               <tr>
                 <td>
-                  <Link to="/productList">
+                  <Link to="/vgaList">
                     <a>VGA</a>
                   </Link>
                 </td>
@@ -33,17 +33,17 @@ export default function Categories() {
               </tr>
               <tr>
                 <td>
-                  <Link to="/productList">
+                  <Link to="/processorList">
                     <a>Processor</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to="/productList">
+                  <Link to="/ramList">
                     <a>RAM</a>
                   </Link>
                 </td>
                 <td>
-                  <Link to="/productList">
+                  <Link to="/psuList">
                     <a>Power Supply</a>
                   </Link>
                 </td>
@@ -51,7 +51,7 @@ export default function Categories() {
               <tr>
                 <td></td>
                 <td>
-                  <Link to="/productList">
+                  <Link to="/motherboardList">
                     <a>Motherboard</a>
                   </Link>
                 </td>

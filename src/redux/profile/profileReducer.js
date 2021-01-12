@@ -1,21 +1,21 @@
 import {
-    NAVIGATION_FAILED,
-    NAVIGATION_SUCCESS
-  } from './navigationTypes'
+    PROFILE_FAILED,
+    PROFILE_SUCCESS
+  } from './profileTypes'
   
   const initialState = {
     data: [],
     error: ''
   }
   
-  const navigationReducer = (state = initialState, action) => {
+  const profileReducer = (state = initialState, action) => {
     switch (action.type) {
-      case NAVIGATION_SUCCESS:
+      case PROFILE_SUCCESS:
         return {
           data: action.payload,
           error: ''
         }
-      case NAVIGATION_FAILED:
+      case PROFILE_FAILED:
         return {
           data: [],
           error: action.payload
@@ -26,5 +26,5 @@ import {
   
 
 
-  export default navigationReducer
+  export default profileReducer
   

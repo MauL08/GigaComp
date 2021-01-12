@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import * as BiIcons from 'react-icons/bi';
@@ -6,11 +6,15 @@ import * as BsIcons from 'react-icons/bs';
 import * as AiIcons from 'react-icons/ai';
 import * as CgIcons from 'react-icons/cg';
 import Logo from '../img/logo.png';
-import { CartContext } from '../routes/user/Product';
 import './navbar.css';
+import { fetchProfile } from "../redux";
+import { connect } from "react-redux";
 
-export default function NavBar() {
-  const showCartContext = useContext(CartContext);
+function NavBar({ profileData, fetchProfile}) {
+
+  useEffect(() => {
+    fetchProfile();
+  }, []);
 
   return (
     <div className='navbar'>
@@ -22,7 +26,7 @@ export default function NavBar() {
         <Link to='/categories'>
           <a>Categories</a>
         </Link>
-        <IconContext.Provider value={{ size: '25px' }}>
+        
           <div className='search-div'>
             <input
               type='text'
@@ -50,15 +54,40 @@ export default function NavBar() {
           </div>
           <div className='profile-div'>
             {/* !! if the login is done, then route to the profile page !! */}
-            <Link to='/login'>
+            {
+              document.cookie ? 
+              <Link to='/profile'>
+              <a>
+                <CgIcons.CgProfile />
+              </a>
+            </Link> :
+              <Link to='/login'>
               <a>
                 <CgIcons.CgProfile />
               </a>
             </Link>
-            <span>User</span>
+            }
+            {profileData.data[0]?
+             <span>{profileData.data[0].name}</span>:
+              <span>user</span>}
+            
           </div>
-        </IconContext.Provider>
       </div>
     </div>
   );
 }
+
+
+const mapStateToProps = (state) => {
+  return {
+    profileData: state.profile,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProfile: () => dispatch(fetchProfile()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

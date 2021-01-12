@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import product3 from '../../img/product/vga1.jpg';
 import '../../styles/user/product.css';
+import { fetchSpecific } from "../../redux";
+import { connect } from "react-redux";
 
-export const CartContext = React.createContext();
-
-export default function Product() {
+function Product({specificData, fetchSpecific, match}) {
   const [stock, setStock] = useState(999);
   const [cart, setCart] = useState(0);
 
@@ -16,17 +16,22 @@ export default function Product() {
     alert('Product Added to Cart!');
   };
 
+  useEffect(() => {
+    fetchSpecific(match.params.id);
+  }, []);
+
   return (
     <div className='productPage'>
-      <CartContext.Provider value={cart}>
         <NavBar />
         <div className='productDetail'>
           <div className='productImage'>
-            <h1>NVIDIA GeForce RTX 3080</h1>
-            <br></br>
+            <h1>{specificData.data.nama_produk}</h1>
+            <h3>Rating : {specificData.data.rating}</h3>
+            <br>
+            </br>
             <img src={product3} width='500'></img>
             <br></br>
-            <h2>Rp 13.500.000,00</h2>
+            <h2>Harga : Rp.{specificData.data.harga}</h2>
             <h3>Stock : {stock}</h3>
             <br></br>
             <button className='addCartButton' onClick={buttonActive}>
@@ -37,14 +42,27 @@ export default function Product() {
             <div className='productSpec'>
               <h1>Description</h1>
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lacus porttitor, pretium nibh eu, mattis augue. Proin lorem lectus, sodales in tincidunt at, varius quis tortor. Vivamus consectetur eu ipsum nec malesuada. Donec rhoncus arcu in lobortis lacinia. In at felis ut odio scelerisque sollicitudin. Curabitur sed diam justo. Ut efficitur nibh nibh, ac lobortis ipsum venenatis sollicitudin. Aliquam ullamcorper, est pharetra bibendum rutrum, tortor mi lacinia orci, in dignissim sem ligula at ex. Ut placerat metus et enim laoreet, at accumsan erat fermentum. Vivamus bibendum malesuada dolor, non ornare mauris semper vitae. Nullam blandit libero et faucibus vehicula. In placerat nisi vel ipsum viverra condimentum. Aliquam erat volutpat.
-                Fusce aliquam pretium consequat. Suspendisse tristique tempor accumsan. Nam neque lectus, facilisis vel dui sit amet, imperdiet pharetra lacus. Nullam faucibus sed ex sed tristique. Aliquam vel nisi enim. Etiam euismod vestibulum diam non posuere. Sed fringilla tempus finibus. Nulla tincidunt neque tempor eros tempus sodales. Cras vel scelerisque arcu.
+              {specificData.data.deskripsi}
               </h3>
             </div>
           </div>
         </div>
-      </CartContext.Provider>
       <Footer />
     </div>
   );
 }
+
+
+const mapStateToProps = (state) => {
+  return {
+    specificData: state.specific,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchSpecific: (id) => dispatch(fetchSpecific(id)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

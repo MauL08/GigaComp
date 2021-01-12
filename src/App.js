@@ -17,6 +17,11 @@ import EditProfile from './routes/user/EditProfile';
 import Result from './routes/user/Result';
 import Redirect from './components/Redirect';
 import ProductList from './routes/user/categories/ProductList';
+import MotherboardList from './routes/user/categories/MotherboardList';
+import RamList from './routes/user/categories/RamList';
+import ProcessorList from './routes/user/categories/ProcessorList';
+import VGAList from './routes/user/categories/VGAList';
+import PSUList from './routes/user/categories/PSUList';
 import store from './redux/store'
 import { Provider } from "react-redux";
 
@@ -34,7 +39,7 @@ function App() {
           {/* User Routes */}
           <Route path='/login' exact component={LoginForm} />
           <Route path='/register' exact component={RegisterForm} />
-          <Route path='/product' exact component={Product} />
+          <Route path='/product/:id' exact component={Product} />
           <Route path='/cart' exact component={Cart} />
           <Route path='/payment' exact component={Payment} />
           <Route path='/categories' exact component={Categories} />
@@ -44,6 +49,11 @@ function App() {
           <Route path='/result' exact component={Result} />
           {/* Categories Routes */}
           <Route path='/productList' exact component={ProductList} />
+          <Route path='/motherboardList' exact component={MotherboardList} />
+          <Route path='/ramList' exact component={RamList} />
+          <Route path='/processorList' exact component={ProcessorList} />
+          <Route path='/vgaList' exact component={VGAList} />
+          <Route path='/psuList' exact component={PSUList} />
           {/* Unknown Route */}
           <Route path='*' component={Redirect} />
         </Switch>

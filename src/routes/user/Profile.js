@@ -1,12 +1,19 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import * as CgIcons from 'react-icons/cg';
 import { IconContext } from 'react-icons';
 import '../../styles/user/profile.css';
+import { fetchProfile } from "../../redux";
+import { connect } from "react-redux";
 
-export default function Profile() {
+function Profile({ profileData, fetchProfile}) {
+  
+  useEffect(() => {
+    fetchProfile();
+  }, []);
+
   return (
     <div>
       <NavBar />
@@ -18,10 +25,10 @@ export default function Profile() {
               <br></br>
               <CgIcons.CgProfile />
               <div className='userDetail'>
-                <h3>Username : ---</h3>
-                <h3>Email : ---</h3>
-                <h3>Address : ---</h3>
-                <h3>Phone : ---</h3>
+                <h3>Username : {profileData.data[0].name}</h3>
+                <h3>Email : {profileData.data[0].email}</h3>
+                <h3>Fullname : ---</h3>
+                <h3>Phone : {profileData.data[0].phone}</h3>
               </div>
               <Link to='/profile/edit'>
                 <button className='editProfileButton'>Edit Profile</button>
@@ -63,3 +70,17 @@ export default function Profile() {
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    profileData: state.profile,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchProfile: () => dispatch(fetchProfile()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
