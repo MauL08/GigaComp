@@ -22,6 +22,7 @@ import RamList from './routes/user/categories/RamList';
 import ProcessorList from './routes/user/categories/ProcessorList';
 import VGAList from './routes/user/categories/VGAList';
 import PSUList from './routes/user/categories/PSUList';
+import OrderDetails from './routes/user/OrderDetails';
 import store from './redux/store'
 import { Provider } from "react-redux";
 
@@ -54,6 +55,7 @@ function App() {
           <Route path='/processorList' exact component={ProcessorList} />
           <Route path='/vgaList' exact component={VGAList} />
           <Route path='/psuList' exact component={PSUList} />
+          <Route path='/payment/:id' exact component={OrderDetails} />
           {/* Unknown Route */}
           <Route path='*' component={Redirect} />
         </Switch>

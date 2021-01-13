@@ -11,7 +11,7 @@ function LoginForm({ data, fetchLogin}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const loginAuth = () => {fetchLogin(email, password)};
+  const login = () => {fetchLogin(email, password)};
 
   return (
     <div className='loginPage'>
@@ -49,7 +49,7 @@ function LoginForm({ data, fetchLogin}) {
           <br></br>
           <br></br>
           <Link to='/'>
-            <button className='crusialButton' onClick={loginAuth}>
+            <button className='crusialButton' onClick={login}>
               Login
             </button>
           </Link>

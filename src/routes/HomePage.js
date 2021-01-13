@@ -86,11 +86,13 @@ function HomePage({ productData, fetchProduct }) {
             <tr>
               {row.map(item => (
                 <td>
+                  <Link to={`/product/${item._id.$oid}`}>
                 <div className="image-product">
                   <img src={product3} width="180"></img>
                   <br></br>
                   <span>{item.nama_produk}</span>
                 </div>
+                </Link>
               </td>
               ))}
             </tr>

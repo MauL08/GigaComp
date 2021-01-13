@@ -9,6 +9,9 @@ import processorReducer from './category/processor/processorReducer'
 import vgaReducer from './category/vga/vgaReducer'
 import specificReducer from './specificProduct/specificReducer'
 import psuReducer from './category/psu/psuReducer'
+import cartReducer from './cart/cartReducer'
+import addressReducer from './address/addressReducer'
+import paymentReducer from './payment/paymentReducer'
 
 
 
@@ -24,7 +27,9 @@ const rootReducer = combineReducers({
   vga: vgaReducer,
   psu: psuReducer,
   specific: specificReducer,
-
+  cart: cartReducer,
+  address: addressReducer,
+  payment: paymentReducer,
 })
 
 export default rootReducer

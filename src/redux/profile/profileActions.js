@@ -4,7 +4,9 @@ import axios from "axios";
 export const fetchProfile = () => {
   return (dispatch) => {
     axios
-      .get("http://127.0.0.1:6969/users/profile"
+      .get("http://127.0.0.1:6969/users/profile",{
+        withCredentials: true
+      }
        )
       .then((response) => {
         // response.data is the users

@@ -15,7 +15,7 @@ function EditProfile({ profileData, fetchProfile}) {
   const [email, setEmail] = useState(0);
 
   const editActive = () => {
-    alert('Profile updatted!');
+
   };
   
   
@@ -40,12 +40,6 @@ function EditProfile({ profileData, fetchProfile}) {
               <input type='text' placeholder='Type Here!' onChange={event => {
                   setEmail(event.target.value);
                 }}></input>
-              <h3>Address</h3>
-              <textarea
-                type='text'
-                placeholder='Type Here!'
-                className='inputAddressText'
-              ></textarea>
               <h3>Phone</h3>
               <input type='text' placeholder='Type Here!' onChange={event => {
                   setPhone(event.target.value);

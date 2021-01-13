@@ -3,16 +3,18 @@ import axios from "axios";
 
 export const fetchLogin = (email, password) => {
   return (dispatch) => {
+
     axios
       .post("http://127.0.0.1:6969/users/login", {
         email,
         password,
+      },
+      {
+        withCredentials: true
       })
       .then((response) => {
         // response.data is the users
         const logins = response.data;
-        console.log(document.cookie);
-        console.log(response.status)
         dispatch(loginSuccess(logins));
       })
       .catch((error) => {

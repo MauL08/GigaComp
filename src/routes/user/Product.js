@@ -3,22 +3,23 @@ import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import product3 from '../../img/product/vga1.jpg';
 import '../../styles/user/product.css';
-import { fetchSpecific } from "../../redux";
+import { fetchSpecific, fetchPostCart } from "../../redux";
 import { connect } from "react-redux";
 
-function Product({specificData, fetchSpecific, match}) {
+function Product({specificData, fetchSpecific, fetchPostCart, match}) {
   const [stock, setStock] = useState(999);
   const [cart, setCart] = useState(0);
 
   const buttonActive = () => {
-    setStock(stock - 1);
-    setCart(cart + 1);
+    fetchPostCart(match.params.id)
     alert('Product Added to Cart!');
   };
 
   useEffect(() => {
     fetchSpecific(match.params.id);
   }, []);
+
+  
 
   return (
     <div className='productPage'>
@@ -62,6 +63,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchSpecific: (id) => dispatch(fetchSpecific(id)),
+    fetchPostCart: (product_id) =>dispatch(fetchPostCart(product_id))
   };
 };
 

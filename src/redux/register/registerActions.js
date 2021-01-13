@@ -10,6 +10,9 @@ export const fetchRegister = (phone, password, email, name) => {
       email,
       name,
       },
+      {
+        withCredentials: true
+      }
        )
       .then((response) => {
         // response.data is the users
