@@ -80,6 +80,27 @@ function Profile({
                 ))}
               </table>
             </div>
+            <h4>Bayar Kesini</h4>
+            <div className='paymentMethod'>
+                <table className='paymentList'>
+                  <tr className='trTitle'>
+                    <td>Bank</td>
+                    <td>Virtual Account Number</td>
+                  </tr>
+                  <tr>
+                    <td>Bank Mandiri</td>
+                    <td>856734128532</td>
+                  </tr>
+                  <tr>
+                    <td>Bank BNI</td>
+                    <td>876932451688</td>
+                  </tr>
+                  <tr>
+                    <td>Bank BCA</td>
+                    <td>893416735548</td>
+                  </tr>
+                </table>
+            </div>
           </div>
         </div>
       </div>

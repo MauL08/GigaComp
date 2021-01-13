@@ -122,3 +122,22 @@
 .showAddress td {
   padding: 30px;
 }
+.paymentMethod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paymentList {
+  color: black;
+  text-align: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  border-radius: 20px;
+  background-color: #30c7ff;
+  width: 100%;
+}
+.paymentList td {
+  padding: 30px;
+}
