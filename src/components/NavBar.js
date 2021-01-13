@@ -26,7 +26,6 @@ function NavBar({ profileData, fetchProfile}) {
         <Link to='/categories'>
           <a>Categories</a>
         </Link>
-        
           <div className='search-div'>
             <input
               type='text'
@@ -39,11 +38,6 @@ function NavBar({ profileData, fetchProfile}) {
               </a>
             </Link>
           </div>
-          <Link to='/wishlist'>
-            <a>
-              <BsIcons.BsFillHeartFill />
-            </a>
-          </Link>
           <div className='cart-div'>
             <Link to='/cart'>
               <a>
@@ -69,14 +63,17 @@ function NavBar({ profileData, fetchProfile}) {
             }
             {profileData.data[0]?
              <span>{profileData.data[0].name}</span>:
-              <span>user</span>}
-            
+            <span>user</span>}
           </div>
+          <Link to='/logout'>
+            <a>
+              <h4>Log Out</h4>
+            </a>
+          </Link>
       </div>
     </div>
   );
 }
-
 
 const mapStateToProps = (state) => {
   return {
