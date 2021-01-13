@@ -10,22 +10,41 @@ export default function Payment() {
       <NavBar />
       <div className='paymentPage'>
         <div className='paymentDiv'>
-          <h1>Payment Page</h1>
+          <h1>Halaman Pembayaran</h1>
           <br></br>
           <div className='totalAmount'>
-            <h1>Total Amount</h1>
+            <h1>Total Harga</h1>
             <h3>Rp 999.999,00</h3>
           </div>
           <br></br>
           <div className='accountNumber'>
-            <h1>Account Number</h1>
-            <h3>8219389089024</h3>
+          <h4>Bayar Kesini</h4>
+          <div className='paymentMethod'>
+              <table className='paymentList'>
+                <tr className='trTitle'>
+                  <td>Bank</td>
+                  <td>Virtual Account Number</td>
+                </tr>
+                <tr>
+                  <td>Bank Mandiri</td>
+                  <td>856734128532</td>
+                </tr>
+                <tr>
+                  <td>Bank BNI</td>
+                  <td>876932451688</td>
+                </tr>
+                <tr>
+                  <td>Bank BCA</td>
+                  <td>893416735548</td>
+                </tr>
+              </table>
+          </div>
           </div>
           <br></br>
           <div className='uploadTransaction'>
-            <h1>Transaction</h1>
+            <h1>Bukti Transaksi</h1>
             <div className='uploadFile'>
-              <p>Upload an Proof of Payment to continue process...</p>
+              <p>Upload Bukti Transaksi untuk melanjutkan Pembayaran...</p>
               <input type='file'></input>
             </div>
           </div>
